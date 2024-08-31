@@ -1,5 +1,3 @@
-diff --git a/.bazelrc b/.bazelrc
-index 23492c0..2a1709f 100644
 --- a/.bazelrc
 +++ b/.bazelrc
 @@ -24,7 +24,7 @@ build:ubsan --copt=-fno-sanitize=function --copt=-fno-sanitize=vptr
