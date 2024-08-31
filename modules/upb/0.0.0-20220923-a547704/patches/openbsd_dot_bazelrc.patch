@@ -1,0 +1,12 @@
+diff --git a/.bazelrc b/.bazelrc
+index 23492c0..2a1709f 100644
+--- a/.bazelrc
++++ b/.bazelrc
+@@ -24,7 +24,7 @@ build:ubsan --copt=-fno-sanitize=function --copt=-fno-sanitize=vptr
+ # Workaround for https://bugs.llvm.org/show_bug.cgi?id=16404
+ build:ubsan --linkopt=--rtlib=compiler-rt --linkopt=-lunwind
+ 
+-build:Werror --copt=-Werror
++build:Werror --copt=-Werror --copt=-Wno-gnu-offsetof-extensions
+ build:Werror --per_file_copt=json/parser@-Wno-error
+ build:Werror --per_file_copt=com_google_protobuf@-Wno-error
