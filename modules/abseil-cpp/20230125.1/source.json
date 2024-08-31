@@ -5,6 +5,6 @@
     "patch_strip": 0,
     "patches": {
         "module_dot_bazel.patch": "sha256-L1wChhBmDOnRbPbD4MENVXHjOBT2KFrDxT6D+aoThxk=",
-        "openbsd_remove_syscall_use.patch": "sha256-YjhhZjAzYmVhMDNjMGI1MThjZWRjM2M0M2MzNzY2YWFkOWJmN2E5MmM5N2ExY2ZhN2I4MjI2NGNjOTEyMWM1OQ=="
+        "openbsd_remove_syscall_use.patch": "sha256-uK8DvqA8C1GM7cPEPDdmqtm/epLJehz6e4ImTMkSHFk="
     }
 }
