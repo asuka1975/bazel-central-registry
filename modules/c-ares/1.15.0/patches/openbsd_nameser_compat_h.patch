@@ -1,3 +1,18 @@
+diff --git a/adig.c b/adig.c
+index e112dc04..2f558ab3 100644
+--- a/adig.c
++++ b/adig.c
+@@ -30,9 +30,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #  include <strings.h>
 diff --git a/ares_config.h.cmake b/ares_config.h.cmake
 index 49f3b214..db6736bd 100644
 --- a/ares_config.h.cmake
@@ -12,6 +27,276 @@ index 49f3b214..db6736bd 100644
  /* Define to 1 if you have the <arpa/nameser.h> header file. */
  #cmakedefine HAVE_ARPA_NAMESER_H
  
+diff --git a/ares_create_query.c b/ares_create_query.c
+index 1606b1a1..24c7b158 100644
+--- a/ares_create_query.c
++++ b/ares_create_query.c
+@@ -24,9 +24,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_expand_name.c b/ares_expand_name.c
+index 3a38e673..d31e76ed 100644
+--- a/ares_expand_name.c
++++ b/ares_expand_name.c
+@@ -24,9 +24,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_nowarn.h"
+diff --git a/ares_gethostbyaddr.c b/ares_gethostbyaddr.c
+index a8ca0f57..5ff4436b 100644
+--- a/ares_gethostbyaddr.c
++++ b/ares_gethostbyaddr.c
+@@ -29,9 +29,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_inet_net_pton.h"
+diff --git a/ares_gethostbyname.c b/ares_gethostbyname.c
+index 8187746b..3cdd1e76 100644
+--- a/ares_gethostbyname.c
++++ b/ares_gethostbyname.c
+@@ -30,9 +30,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #include <strings.h>
+diff --git a/ares_getnameinfo.c b/ares_getnameinfo.c
+index aa089417..bac41f25 100644
+--- a/ares_getnameinfo.c
++++ b/ares_getnameinfo.c
+@@ -36,9 +36,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_NET_IF_H
+ #include <net/if.h>
+diff --git a/ares_init.c b/ares_init.c
+index ff0dbdf7..4bdf5fa7 100644
+--- a/ares_init.c
++++ b/ares_init.c
+@@ -38,9 +38,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #if defined(ANDROID) || defined(__ANDROID__)
+ #include <sys/system_properties.h>
+diff --git a/ares_parse_a_reply.c b/ares_parse_a_reply.c
+index 0422bd38..834ab542 100644
+--- a/ares_parse_a_reply.c
++++ b/ares_parse_a_reply.c
+@@ -30,9 +30,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #  include <strings.h>
+diff --git a/ares_parse_aaaa_reply.c b/ares_parse_aaaa_reply.c
+index 5b38bb57..3e22e502 100644
+--- a/ares_parse_aaaa_reply.c
++++ b/ares_parse_aaaa_reply.c
+@@ -31,9 +31,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #  include <strings.h>
+diff --git a/ares_parse_mx_reply.c b/ares_parse_mx_reply.c
+index e6336473..9fb48623 100644
+--- a/ares_parse_mx_reply.c
++++ b/ares_parse_mx_reply.c
+@@ -31,9 +31,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_parse_naptr_reply.c b/ares_parse_naptr_reply.c
+index a14c226a..8edd09bb 100644
+--- a/ares_parse_naptr_reply.c
++++ b/ares_parse_naptr_reply.c
+@@ -31,9 +31,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_parse_ns_reply.c b/ares_parse_ns_reply.c
+index 7bb51429..890de57a 100644
+--- a/ares_parse_ns_reply.c
++++ b/ares_parse_ns_reply.c
+@@ -34,9 +34,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_parse_ptr_reply.c b/ares_parse_ptr_reply.c
+index 29e22cb1..c4607ad2 100644
+--- a/ares_parse_ptr_reply.c
++++ b/ares_parse_ptr_reply.c
+@@ -27,9 +27,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #  include <strings.h>
+diff --git a/ares_parse_soa_reply.c b/ares_parse_soa_reply.c
+index 35af0a75..1c768169 100644
+--- a/ares_parse_soa_reply.c
++++ b/ares_parse_soa_reply.c
+@@ -31,9 +31,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_parse_srv_reply.c b/ares_parse_srv_reply.c
+index 824ff3ae..1d3436f2 100644
+--- a/ares_parse_srv_reply.c
++++ b/ares_parse_srv_reply.c
+@@ -31,9 +31,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_parse_txt_reply.c b/ares_parse_txt_reply.c
+index 4856b4ce..2946d49f 100644
+--- a/ares_parse_txt_reply.c
++++ b/ares_parse_txt_reply.c
+@@ -31,9 +31,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #  include <strings.h>
+diff --git a/ares_process.c b/ares_process.c
+index df9f290b..489dc0f8 100644
+--- a/ares_process.c
++++ b/ares_process.c
+@@ -37,9 +37,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #ifdef HAVE_STRINGS_H
+ #  include <strings.h>
+diff --git a/ares_query.c b/ares_query.c
+index b38b8a6c..ba8f23f8 100644
+--- a/ares_query.c
++++ b/ares_query.c
+@@ -24,9 +24,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
+diff --git a/ares_send.c b/ares_send.c
+index f4f1f951..c80e13e8 100644
+--- a/ares_send.c
++++ b/ares_send.c
+@@ -24,9 +24,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
+ 
+ #include "ares.h"
+ #include "ares_dns.h"
 diff --git a/inet_net_pton.c b/inet_net_pton.c
 index af1a534a..c11fe5f4 100644
 --- a/inet_net_pton.c
@@ -23,6 +308,21 @@ index af1a534a..c11fe5f4 100644
 -#ifdef HAVE_ARPA_NAMESER_COMPAT_H
 -#  include <arpa/nameser_compat.h>
 -#endif
+ 
+ #include "ares.h"
+ #include "ares_ipv6.h"
+diff --git a/inet_ntop.c b/inet_ntop.c
+index 1935a871..ecb97b05 100644
+--- a/inet_ntop.c
++++ b/inet_ntop.c
+@@ -28,9 +28,7 @@
+ #else
+ #  include "nameser.h"
+ #endif
+-#ifdef HAVE_ARPA_NAMESER_COMPAT_H
+-#  include <arpa/nameser_compat.h>
+-#endif
++
  
  #include "ares.h"
  #include "ares_ipv6.h"
