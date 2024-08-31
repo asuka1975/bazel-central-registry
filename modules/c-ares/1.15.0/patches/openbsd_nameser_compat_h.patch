@@ -326,3 +326,4 @@ index 1935a871..ecb97b05 100644
  
  #include "ares.h"
  #include "ares_ipv6.h"
+
