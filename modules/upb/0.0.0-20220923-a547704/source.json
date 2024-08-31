@@ -5,6 +5,6 @@
     "patch_strip": 0,
     "patches": {
         "module_dot_bazel.patch": "sha256-wH4mNS6ZYy+8uC0HoAft/c7SDsq2Kxf+J8dUakXhaB0=",
-        "openbsd_dot_bazelrc.patch": "sha256-ZDQxOWE1ZWEyNTYyMmIyMzM5NjZhZTFjZTgxZGNjYTgxZWY5NjEyOWVjOGZjYzFjMzJiNTRkZDRjMzhhYjMwZA=="
+        "openbsd_dot_bazelrc.patch": "sha256-1Bml6iViKyM5Zq4c6B3MqB75YSnsj8wcMrVN1MOKsw0="
     }
 }
