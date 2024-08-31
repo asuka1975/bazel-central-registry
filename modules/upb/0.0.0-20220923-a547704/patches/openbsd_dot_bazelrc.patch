@@ -8,3 +8,4 @@
 +build:Werror --copt=-Werror --copt=-Wno-gnu-offsetof-extensions
  build:Werror --per_file_copt=json/parser@-Wno-error
  build:Werror --per_file_copt=com_google_protobuf@-Wno-error
+
