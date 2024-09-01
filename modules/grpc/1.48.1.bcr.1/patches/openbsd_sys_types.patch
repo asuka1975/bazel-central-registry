@@ -1,0 +1,19 @@
+--- src/core/lib/iomgr/sockaddr_utils_posix.cc
++++ src/core/lib/iomgr/sockaddr_utils_posix.cc
+@@ -22,6 +22,7 @@
+ 
+ #ifdef GRPC_POSIX_SOCKET_UTILS_COMMON
+ 
++#include <sys/types.h>
+ #include "src/core/lib/iomgr/socket_utils.h"
+ #ifdef GRPC_LINUX_TCP_H
+ #include <linux/tcp.h>
+@@ -31,7 +32,6 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <sys/socket.h>
+-#include <sys/types.h>
+ #include <unistd.h>
+ 
+ #include <string>
+
