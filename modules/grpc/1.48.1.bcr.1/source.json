@@ -4,7 +4,7 @@
     "strip_prefix": "grpc-1.48.1",
     "patches": {
         "adopt_bzlmod.patch": "sha256-iMrebRKNKLNqVtRX+4eRZ63QcBr2t8Zo/ZvBPjVnyw8=",
-        "openbsd_sys_types.patch": "sha256-GxG5o/XStichIkanRAI+mUo12MnQ2ozSYOH7f86mgwI="
+        "openbsd_sys_types.patch": "sha256-W9buy/NR0J5rmET69IbppR4xHZBY8d9dm7HHKOL8unI="
     },
     "patch_strip": 1
 }
