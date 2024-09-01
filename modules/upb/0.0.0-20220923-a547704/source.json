@@ -4,7 +4,6 @@
     "url": "https://github.com/protocolbuffers/upb/archive/a5477045acaa34586420942098f5fecd3570f577.tar.gz",
     "patch_strip": 0,
     "patches": {
-        "module_dot_bazel.patch": "sha256-wH4mNS6ZYy+8uC0HoAft/c7SDsq2Kxf+J8dUakXhaB0=",
-        "openbsd_dot_bazelrc.patch": "sha256-flRnFJlmmRbzB4y+OxZcSEgMrbIltK9BaMvjn43kbcs="
+        "module_dot_bazel.patch": "sha256-wH4mNS6ZYy+8uC0HoAft/c7SDsq2Kxf+J8dUakXhaB0="
     }
 }
