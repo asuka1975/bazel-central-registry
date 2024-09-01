@@ -1,0 +1,13 @@
+--- ares_getnameinfo.c
++++ ares_getnameinfo.c
+@@ -22,6 +22,9 @@
+ #  endif
+ #endif
+ 
++#undef GETSERVBYPORT_R_ARGS
++#define GETSERVBYPORT_R_ARGS 4
++
+ #ifdef HAVE_NETINET_IN_H
+ #  include <netinet/in.h>
+ #endif
+
