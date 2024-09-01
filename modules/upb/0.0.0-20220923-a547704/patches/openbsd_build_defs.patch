@@ -1,5 +1,5 @@
---- a/bazel/build_defs.bzl
-+++ b/bazel/build_defs.bzl
+--- bazel/build_defs.bzl
++++ bazel/build_defs.bzl
 @@ -39,8 +39,6 @@ _DEFAULT_CPPOPTS.extend([
  ])
  _DEFAULT_COPTS.extend([
